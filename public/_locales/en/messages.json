@@ -1,0 +1,8 @@
+{
+  "chrome_extension_name": {
+    "message": "YouTube Skip Button Clicker"
+  },
+  "chrome_extension_description": {
+    "message": "A Chrome extension to automatically click the skip button on YouTube videos."
+  }
+}
