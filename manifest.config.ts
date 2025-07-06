@@ -16,10 +16,10 @@ export default defineManifest(async (env) => ({
     "48": "images/icon-48.png",
     "128": "images/icon-128.png",
   },
-  // background: {
-  //   service_worker: "src/background.ts",
-  //   type: "module",
-  // },
+  background: {
+    service_worker: "src/background/index.ts",
+    type: "module",
+  },
   action: {
     default_icon: {
       "16": "images/icon-16.png",
@@ -29,13 +29,13 @@ export default defineManifest(async (env) => ({
     },
     default_popup: "src/popup/index.html",
   },
-  // permissions: ["scripting", "activeTab"],
-  // commands: {
-  //   _execute_action: {
-  //     suggested_key: {
-  //       default: "Ctrl+B",
-  //       mac: "Command+B",
-  //     },
-  //   },
-  // },
+  permissions: ["scripting", "activeTab", "storage", "tabs", "notifications"],
+  host_permissions: ["*://www.youtube.com/*"],
+  content_scripts: [
+    {
+      matches: ["*://www.youtube.com/*"],
+      js: ["src/content/youtube-skipper.ts"],
+      run_at: "document_end",
+    },
+  ],
 }));
