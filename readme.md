@@ -1,5 +1,19 @@
 # YouTube Skip Button Clicker
 
+> **⚠️ DEVELOPMENT STATUS WARNING ⚠️**
+> 
+> This extension is currently **UNDER ACTIVE DEVELOPMENT** and **MAY NOT FUNCTION PROPERLY**. 
+> 
+> **Known Issues:**
+> - Skip button detection may be inconsistent
+> - Clicking mechanism may not work reliably on all YouTube ad formats
+> - Extension may fail to activate on certain pages or browser configurations
+> - Performance optimizations are still being implemented
+> 
+> **This is an experimental project and should be used for testing and development purposes only.**
+> 
+> Please report any issues or bugs you encounter to help improve the extension.
+
 A lightweight and efficient Chrome extension that automatically clicks YouTube ad skip buttons, eliminating the need for manual interaction with advertisements. Built with modern web technologies and optimized for performance and reliability.
 
 ## Features
